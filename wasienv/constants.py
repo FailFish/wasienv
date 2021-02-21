@@ -1,6 +1,7 @@
 import os
 
 from .sdk import WASI_SDK_DIR
+from .sdk import WAMR_SDK_DIR
 
 wasienv_DIR    = os.path.dirname(__file__)
 
@@ -13,6 +14,7 @@ AR      = os.path.join(WASI_SDK_DIR, "bin/llvm-ar")
 RANLIB  = os.path.join(WASI_SDK_DIR, "bin/llvm-ranlib")
 
 WASI_SYSROOT = os.path.join(WASI_SDK_DIR, "share/wasi-sysroot")
+WAMR_SYSROOT = os.path.join(WAMR_SDK_DIR, "app/libc-builtin-sysroot")
 
 # Binaries
 WASI_CC      = "wasicc"

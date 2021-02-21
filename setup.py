@@ -45,5 +45,7 @@ setup(
         'wasinm = wasienv.commands:wasinm',
         'wasiranlib = wasienv.commands:wasiranlib',
         'wasiswiftc = wasienv.commands:wasiswiftc',
+        'wamrcc = wasienv.commands:wamrcc',
+        'wamrc++ = wasienv.commands:wamrcc',
     ]},
 )

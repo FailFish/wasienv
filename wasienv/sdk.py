@@ -217,8 +217,11 @@ def set_default_sdk(sdk_name):
         raise SDKNotInstalled("The SDK {} is not installed".format(sdk_name))
 
 
-WASI_SDK = get_sdk(CURRENT_SDK)
-WASI_SDK_DIR = get_sdk_sysroot(WASI_SDK, CURRENT_SDK)
+# WASI_SDK = get_sdk(CURRENT_SDK)
+# WASI_SDK_DIR = get_sdk_sysroot(WASI_SDK, CURRENT_SDK)
+WASI_SDK = "wamr-sdk"
+WASI_SDK_DIR = os.path.join('/opt/wasi-sdk')
+WAMR_SDK_DIR = os.path.expanduser('~/wasm-micro-runtime/wamr-sdk')
 
 
 if __name__ == '__main__':

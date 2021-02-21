@@ -6,12 +6,12 @@ help:
 .PHONY: install-dev ## Install development dependencies
 install-dev:
 	# Install wasienv locally
-	python setup.py develop
+	python3 setup.py develop
 	# Install pytest
-	pip install pytest
+	pip3 install pytest
 	# Install and set the unstable SDK as defautl
-	wasienv install-sdk unstable
-	wasienv default-sdk unstable
+	# wasienv install-sdk unstable
+	# wasienv default-sdk unstable
 
 .PHONY: test ## Test wasienv. Make sure you run `make install-dev` before.
 test:
